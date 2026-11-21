@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90FDF06268D8C2469330CF2 /* ScriptDeckApp.swift */ = {isa = PBXBuildFile; fileRef = A82F3195B68F60A56A64A67F /* ScriptDeckApp.swift */; };
+		C4E8B1A07D2F49E6A1B3C502 /* StatusBarController.swift */ = {isa = PBXBuildFile; fileRef = C4E8B1A07D2F49E6A1B3C501 /* StatusBarController.swift */; };
+		C4E8B1A07D2F49E6A1B3C504 /* MenuBarPanelView.swift */ = {isa = PBXBuildFile; fileRef = C4E8B1A07D2F49E6A1B3C503 /* MenuBarPanelView.swift */; };
+		9BB73F3271D6429F8585603F /* AppDelegate.swift */ = {isa = PBXBuildFile; fileRef = ED0A61F68F2FD2AF4A56C351 /* AppDelegate.swift */; };
+		2AB4F4531A9BFE7C934132AC /* ScriptConfiguration.swift */ = {isa = PBXBuildFile; fileRef = 5EA9BFAF8D0FF3E2BFE72FB2 /* ScriptConfiguration.swift */; };
+		4C79C7C4208365398A00BD48 /* ScriptRuntimeState.swift */ = {isa = PBXBuildFile; fileRef = 7FFCCF0E436E85E136525083 /* ScriptRuntimeState.swift */; };
+		CFD2703F95AF2AC4F7891C65 /* ScriptValidation.swift */ = {isa = PBXBuildFile; fileRef = 3DEC125543AED61776014CC6 /* ScriptValidation.swift */; };
+		8C88978D0E5EC2BDD5C2BE81 /* ScriptStore.swift */ = {isa = PBXBuildFile; fileRef = 55A7B6B8F0CB95CD8B8BD35D /* ScriptStore.swift */; };
+		64838EB8874BF94525249133 /* ProcessManager.swift */ = {isa = PBXBuildFile; fileRef = 883A659B331DC281F85518C9 /* ProcessManager.swift */; };
+		731BB94FE459183CDFB012E7 /* DashboardViewModel.swift */ = {isa = PBXBuildFile; fileRef = 1DDFBBCCECCF6C379F561B49 /* DashboardViewModel.swift */; };
+		9D33D20E9D72E9E0B1702AE4 /* Theme.swift */ = {isa = PBXBuildFile; fileRef = 90147404D398067DE29BA0A4 /* Theme.swift */; };
+		1DFD9CAE7094CDE8C09B0930 /* DashboardView.swift */ = {isa = PBXBuildFile; fileRef = B3D64C53A843233DDFAB5AE7 /* DashboardView.swift */; };
+		6A585D1D1D7260FEA27B8510 /* ScriptRowView.swift */ = {isa = PBXBuildFile; fileRef = D7AC5DD9A27C6D53A080821F /* ScriptRowView.swift */; };
+		096E9201C490242158117645 /* ScriptEditorView.swift */ = {isa = PBXBuildFile; fileRef = 282C529AC4B259CE04456FFD /* ScriptEditorView.swift */; };
+		8422D2B0171850A85891E99B /* PreviewFixtures.swift */ = {isa = PBXBuildFile; fileRef = 2212F91D4DD488736C5D01C9 /* PreviewFixtures.swift */; };
+		160A85CE36F874DD511CF387 /* main.c */ = {isa = PBXBuildFile; fileRef = 43A4E70F209AF6E8AA300001 /* main.c */; };
+		043274DD9CC30927B6302798 /* ScriptConfigurationTests.swift */ = {isa = PBXBuildFile; fileRef = F0CF06588835CA67E5B0C962 /* ScriptConfigurationTests.swift */; };
+		A413FD5EA13ABC4F551BE73D /* CommandSummaryTests.swift */ = {isa = PBXBuildFile; fileRef = AA2186008D2AC647F99362B3 /* CommandSummaryTests.swift */; };
+		9B0F063931C091D8777FB172 /* ScriptValidationTests.swift */ = {isa = PBXBuildFile; fileRef = 2DAB78E0CE22E6050229A233 /* ScriptValidationTests.swift */; };
+		E5B92872EDAE670B1E3A8B0C /* ScriptStoreTests.swift */ = {isa = PBXBuildFile; fileRef = A2EB120A2C0C6BBB25ED808D /* ScriptStoreTests.swift */; };
+		DC7692E85F63D10A7AFFC07C /* ProcessManagerTests.swift */ = {isa = PBXBuildFile; fileRef = 566EDC11568E8672716A7334 /* ProcessManagerTests.swift */; };
+		C164C6E238D46E7853020DA7 /* ScriptDeckLauncher */ = {isa = PBXBuildFile; fileRef = 820B8773193987A6B6F358EC /* ScriptDeckLauncher */; };
+		A1B2C3D4E5F6000100000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6000100000001 /* Assets.xcassets */; };
+		A1B2C3D4E5F6000200000002 /* ScriptOutputBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6000200000001 /* ScriptOutputBuffer.swift */; };
+		A1B2C3D4E5F6000200000004 /* ScriptOutputSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6000200000003 /* ScriptOutputSheetView.swift */; };
+		A1B2C3D4E5F6000200000006 /* ScriptOutputBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6000200000005 /* ScriptOutputBufferTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FA5D3A23F3DA421D777E1B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A7C1D54B0A28587FC36C682 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6BA0F90D646343B6E9821F;
+			remoteInfo = ScriptDeckLauncher;
+		};
+		34FD9F0AAB104332F3EE3348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A7C1D54B0A28587FC36C682 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE9264A8989D005D6E24CDDC;
+			remoteInfo = ScriptDeck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91C6B336245CA18FA8A1EA87 /* Embed Helper Executable */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				C164C6E238D46E7853020DA7 /* ScriptDeckLauncher */,
+			);
+			name = "Embed Helper Executable";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A82F3195B68F60A56A64A67F /* ScriptDeckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptDeckApp.swift"; path = "ScriptDeck/App/ScriptDeckApp.swift"; sourceTree = "<group>"; };
+		C4E8B1A07D2F49E6A1B3C501 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatusBarController.swift"; path = "ScriptDeck/App/StatusBarController.swift"; sourceTree = "<group>"; };
+		C4E8B1A07D2F49E6A1B3C503 /* MenuBarPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MenuBarPanelView.swift"; path = "ScriptDeck/Views/MenuBarPanelView.swift"; sourceTree = "<group>"; };
+		ED0A61F68F2FD2AF4A56C351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppDelegate.swift"; path = "ScriptDeck/App/AppDelegate.swift"; sourceTree = "<group>"; };
+		5EA9BFAF8D0FF3E2BFE72FB2 /* ScriptConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptConfiguration.swift"; path = "ScriptDeck/Models/ScriptConfiguration.swift"; sourceTree = "<group>"; };
+		7FFCCF0E436E85E136525083 /* ScriptRuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptRuntimeState.swift"; path = "ScriptDeck/Models/ScriptRuntimeState.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F6000200000001 /* ScriptOutputBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptOutputBuffer.swift"; path = "ScriptDeck/Models/ScriptOutputBuffer.swift"; sourceTree = "<group>"; };
+		3DEC125543AED61776014CC6 /* ScriptValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptValidation.swift"; path = "ScriptDeck/Models/ScriptValidation.swift"; sourceTree = "<group>"; };
+		55A7B6B8F0CB95CD8B8BD35D /* ScriptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptStore.swift"; path = "ScriptDeck/Services/ScriptStore.swift"; sourceTree = "<group>"; };
+		883A659B331DC281F85518C9 /* ProcessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProcessManager.swift"; path = "ScriptDeck/Services/ProcessManager.swift"; sourceTree = "<group>"; };
+		1DDFBBCCECCF6C379F561B49 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DashboardViewModel.swift"; path = "ScriptDeck/Services/DashboardViewModel.swift"; sourceTree = "<group>"; };
+		90147404D398067DE29BA0A4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Theme.swift"; path = "ScriptDeck/Views/Theme.swift"; sourceTree = "<group>"; };
+		B3D64C53A843233DDFAB5AE7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DashboardView.swift"; path = "ScriptDeck/Views/DashboardView.swift"; sourceTree = "<group>"; };
+		D7AC5DD9A27C6D53A080821F /* ScriptRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptRowView.swift"; path = "ScriptDeck/Views/ScriptRowView.swift"; sourceTree = "<group>"; };
+		282C529AC4B259CE04456FFD /* ScriptEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptEditorView.swift"; path = "ScriptDeck/Views/ScriptEditorView.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F6000200000003 /* ScriptOutputSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptOutputSheetView.swift"; path = "ScriptDeck/Views/ScriptOutputSheetView.swift"; sourceTree = "<group>"; };
+		2212F91D4DD488736C5D01C9 /* PreviewFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PreviewFixtures.swift"; path = "ScriptDeck/Views/Previews/PreviewFixtures.swift"; sourceTree = "<group>"; };
+		58FAAEF292DD8C24798FBC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "ScriptDeck/Resources/Info.plist"; sourceTree = "<group>"; };
+		A1B2C3D4E5F6000100000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "ScriptDeck/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		3D1EABB572A2BF0EA33D5EFD /* ScriptDeck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "ScriptDeck.entitlements"; path = "ScriptDeck/ScriptDeck.entitlements"; sourceTree = "<group>"; };
+		43A4E70F209AF6E8AA300001 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "main.c"; path = "ScriptDeckLauncher/main.c"; sourceTree = "<group>"; };
+		F0CF06588835CA67E5B0C962 /* ScriptConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptConfigurationTests.swift"; path = "ScriptDeckTests/ScriptConfigurationTests.swift"; sourceTree = "<group>"; };
+		AA2186008D2AC647F99362B3 /* CommandSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CommandSummaryTests.swift"; path = "ScriptDeckTests/CommandSummaryTests.swift"; sourceTree = "<group>"; };
+		2DAB78E0CE22E6050229A233 /* ScriptValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptValidationTests.swift"; path = "ScriptDeckTests/ScriptValidationTests.swift"; sourceTree = "<group>"; };
+		A2EB120A2C0C6BBB25ED808D /* ScriptStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptStoreTests.swift"; path = "ScriptDeckTests/ScriptStoreTests.swift"; sourceTree = "<group>"; };
+		566EDC11568E8672716A7334 /* ProcessManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProcessManagerTests.swift"; path = "ScriptDeckTests/ProcessManagerTests.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F6000200000005 /* ScriptOutputBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScriptOutputBufferTests.swift"; path = "ScriptDeckTests/ScriptOutputBufferTests.swift"; sourceTree = "<group>"; };
+		3461A747AE8237C272AC8094 /* ScriptDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820B8773193987A6B6F358EC /* ScriptDeckLauncher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScriptDeckLauncher; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502D3DB53BE6D93D0CA8AF4 /* ScriptDeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriptDeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EFAB1ECC0D092E20FE51FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020EF329C57C15EF8CC1A617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35F1006C97E0D485FB4F1132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				F75F7C1F42AC9F44C6FC38B3 /* ScriptDeck */,
+				68C597C21953D5D47C662100 /* ScriptDeckLauncher */,
+				92A7E711A7764ED47707CED9 /* ScriptDeckTests */,
+				547D009064F7C3F13BEF3460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F75F7C1F42AC9F44C6FC38B3 /* ScriptDeck */ = {
+			isa = PBXGroup;
+			children = (
+				A82F3195B68F60A56A64A67F /* ScriptDeckApp.swift */,
+				ED0A61F68F2FD2AF4A56C351 /* AppDelegate.swift */,
+				C4E8B1A07D2F49E6A1B3C501 /* StatusBarController.swift */,
+				5EA9BFAF8D0FF3E2BFE72FB2 /* ScriptConfiguration.swift */,
+				7FFCCF0E436E85E136525083 /* ScriptRuntimeState.swift */,
+				A1B2C3D4E5F6000200000001 /* ScriptOutputBuffer.swift */,
+				3DEC125543AED61776014CC6 /* ScriptValidation.swift */,
+				55A7B6B8F0CB95CD8B8BD35D /* ScriptStore.swift */,
+				883A659B331DC281F85518C9 /* ProcessManager.swift */,
+				1DDFBBCCECCF6C379F561B49 /* DashboardViewModel.swift */,
+				90147404D398067DE29BA0A4 /* Theme.swift */,
+				B3D64C53A843233DDFAB5AE7 /* DashboardView.swift */,
+				D7AC5DD9A27C6D53A080821F /* ScriptRowView.swift */,
+				282C529AC4B259CE04456FFD /* ScriptEditorView.swift */,
+				A1B2C3D4E5F6000200000003 /* ScriptOutputSheetView.swift */,
+				C4E8B1A07D2F49E6A1B3C503 /* MenuBarPanelView.swift */,
+				2212F91D4DD488736C5D01C9 /* PreviewFixtures.swift */,
+				58FAAEF292DD8C24798FBC1B /* Info.plist */,
+				A1B2C3D4E5F6000100000001 /* Assets.xcassets */,
+				3D1EABB572A2BF0EA33D5EFD /* ScriptDeck.entitlements */,
+			);
+			name = ScriptDeck;
+			sourceTree = "<group>";
+		};
+		68C597C21953D5D47C662100 /* ScriptDeckLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				43A4E70F209AF6E8AA300001 /* main.c */,
+			);
+			name = ScriptDeckLauncher;
+			sourceTree = "<group>";
+		};
+		92A7E711A7764ED47707CED9 /* ScriptDeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF06588835CA67E5B0C962 /* ScriptConfigurationTests.swift */,
+				AA2186008D2AC647F99362B3 /* CommandSummaryTests.swift */,
+				2DAB78E0CE22E6050229A233 /* ScriptValidationTests.swift */,
+				A2EB120A2C0C6BBB25ED808D /* ScriptStoreTests.swift */,
+				566EDC11568E8672716A7334 /* ProcessManagerTests.swift */,
+				A1B2C3D4E5F6000200000005 /* ScriptOutputBufferTests.swift */,
+			);
+			name = ScriptDeckTests;
+			sourceTree = "<group>";
+		};
+		547D009064F7C3F13BEF3460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3461A747AE8237C272AC8094 /* ScriptDeck.app */,
+				820B8773193987A6B6F358EC /* ScriptDeckLauncher */,
+				B502D3DB53BE6D93D0CA8AF4 /* ScriptDeckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE9264A8989D005D6E24CDDC /* ScriptDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5505F9AF814A7F0992DE2402 /* Build configuration list for PBXNativeTarget "ScriptDeck" */;
+			buildPhases = (
+				4821909E9BF9E73E471FEA84 /* Sources */,
+				6EFAB1ECC0D092E20FE51FCD /* Frameworks */,
+				F667297ED3AB90EAC07798D4 /* Resources */,
+				91C6B336245CA18FA8A1EA87 /* Embed Helper Executable */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B75E023B4E15359DBB00588 /* PBXTargetDependency */,
+			);
+			name = ScriptDeck;
+			productName = ScriptDeck;
+			productReference = 3461A747AE8237C272AC8094 /* ScriptDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC6BA0F90D646343B6E9821F /* ScriptDeckLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDF1BB03B05E81E7996968E /* Build configuration list for PBXNativeTarget "ScriptDeckLauncher" */;
+			buildPhases = (
+				6FEE1E5F72B1D685853622E1 /* Sources */,
+				020EF329C57C15EF8CC1A617 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptDeckLauncher;
+			productName = ScriptDeckLauncher;
+			productReference = 820B8773193987A6B6F358EC /* ScriptDeckLauncher */;
+			productType = "com.apple.product-type.tool";
+		};
+		D478B607B0843B6B9137FFCF /* ScriptDeckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B28569972ABC6047BF58B22 /* Build configuration list for PBXNativeTarget "ScriptDeckTests" */;
+			buildPhases = (
+				D3B6D4B6799995BE6A7BCB75 /* Sources */,
+				35F1006C97E0D485FB4F1132 /* Frameworks */,
+				6D500EBBE8103AB1D9AC843C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B28E826828125D7A3C2BDBC /* PBXTargetDependency */,
+			);
+			name = ScriptDeckTests;
+			productName = ScriptDeckTests;
+			productReference = B502D3DB53BE6D93D0CA8AF4 /* ScriptDeckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A7C1D54B0A28587FC36C682 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 7EF2517A8FE63F4681EC5EEA /* Build configuration list for PBXProject "ScriptDeck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 547D009064F7C3F13BEF3460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE9264A8989D005D6E24CDDC /* ScriptDeck */,
+				EC6BA0F90D646343B6E9821F /* ScriptDeckLauncher */,
+				D478B607B0843B6B9137FFCF /* ScriptDeckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F667297ED3AB90EAC07798D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6000100000002 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D500EBBE8103AB1D9AC843C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4821909E9BF9E73E471FEA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90FDF06268D8C2469330CF2 /* ScriptDeckApp.swift */,
+				9BB73F3271D6429F8585603F /* AppDelegate.swift */,
+				C4E8B1A07D2F49E6A1B3C502 /* StatusBarController.swift */,
+				C4E8B1A07D2F49E6A1B3C504 /* MenuBarPanelView.swift */,
+				2AB4F4531A9BFE7C934132AC /* ScriptConfiguration.swift */,
+				4C79C7C4208365398A00BD48 /* ScriptRuntimeState.swift */,
+				A1B2C3D4E5F6000200000002 /* ScriptOutputBuffer.swift in Sources */,
+				CFD2703F95AF2AC4F7891C65 /* ScriptValidation.swift */,
+				8C88978D0E5EC2BDD5C2BE81 /* ScriptStore.swift */,
+				64838EB8874BF94525249133 /* ProcessManager.swift */,
+				731BB94FE459183CDFB012E7 /* DashboardViewModel.swift */,
+				9D33D20E9D72E9E0B1702AE4 /* Theme.swift */,
+				1DFD9CAE7094CDE8C09B0930 /* DashboardView.swift */,
+				6A585D1D1D7260FEA27B8510 /* ScriptRowView.swift */,
+				096E9201C490242158117645 /* ScriptEditorView.swift */,
+				A1B2C3D4E5F6000200000004 /* ScriptOutputSheetView.swift in Sources */,
+				8422D2B0171850A85891E99B /* PreviewFixtures.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEE1E5F72B1D685853622E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160A85CE36F874DD511CF387 /* main.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B6D4B6799995BE6A7BCB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043274DD9CC30927B6302798 /* ScriptConfigurationTests.swift */,
+				A413FD5EA13ABC4F551BE73D /* CommandSummaryTests.swift */,
+				9B0F063931C091D8777FB172 /* ScriptValidationTests.swift */,
+				E5B92872EDAE670B1E3A8B0C /* ScriptStoreTests.swift */,
+				DC7692E85F63D10A7AFFC07C /* ProcessManagerTests.swift */,
+				A1B2C3D4E5F6000200000006 /* ScriptOutputBufferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B75E023B4E15359DBB00588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6BA0F90D646343B6E9821F /* ScriptDeckLauncher */;
+			targetProxy = 6FA5D3A23F3DA421D777E1B3 /* PBXContainerItemProxy */;
+		};
+		4B28E826828125D7A3C2BDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE9264A8989D005D6E24CDDC /* ScriptDeck */;
+			targetProxy = 34FD9F0AAB104332F3EE3348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C19BB360D63F1BA9F02BAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		88A29AB70C762FCDF6D9A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		91B8F6FB95707A0AB87A87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScriptDeck/ScriptDeck.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptDeck/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scriptdeck.ScriptDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		BB071F776B40F4837F61A6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScriptDeck/ScriptDeck.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptDeck/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scriptdeck.ScriptDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		8567974CB9745A187EA93570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCAF9ABC34F84ECE504EF025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58F04E6CEF79D04D48A072E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scriptdeck.ScriptDeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriptDeck.app/Contents/MacOS/ScriptDeck";
+			};
+			name = Debug;
+		};
+		8BEF7D6F48ABC8DA506281C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scriptdeck.ScriptDeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriptDeck.app/Contents/MacOS/ScriptDeck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EF2517A8FE63F4681EC5EEA /* Build configuration list for PBXProject "ScriptDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19BB360D63F1BA9F02BAB59 /* Debug */,
+				88A29AB70C762FCDF6D9A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5505F9AF814A7F0992DE2402 /* Build configuration list for PBXNativeTarget "ScriptDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B8F6FB95707A0AB87A87F1 /* Debug */,
+				BB071F776B40F4837F61A6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDF1BB03B05E81E7996968E /* Build configuration list for PBXNativeTarget "ScriptDeckLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8567974CB9745A187EA93570 /* Debug */,
+				BCAF9ABC34F84ECE504EF025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B28569972ABC6047BF58B22 /* Build configuration list for PBXNativeTarget "ScriptDeckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F04E6CEF79D04D48A072E5 /* Debug */,
+				8BEF7D6F48ABC8DA506281C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A7C1D54B0A28587FC36C682 /* Project object */;
+}
