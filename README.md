@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="ScriptDeck/Resources/Assets.xcassets/AppIcon.appiconset/icon_256x256@2x.png" width="128" height="128" alt="ScriptDeck icon">
+</p>
+
 # ScriptDeck
 
 **Your scripts. One deck.**
